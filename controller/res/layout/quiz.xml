@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg" >
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:padding="20dp" >
+
+        <LinearLayout
+            android:id="@+id/connect_container"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/connect_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:onClick="connectPressed"
+                android:text="Connect" >
+            </Button>
+
+            <Button
+                android:id="@+id/settings_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:onClick="settingsPressed"
+                android:text="Settings" >
+            </Button>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/Question"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:lineSpacingExtra="2dp"
+            android:text="I ask..."
+            android:textColor="#ffffff"
+            android:textSize="26dp" />
+
+        <RadioGroup
+            android:id="@+id/options"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RadioButton
+                android:id="@+id/Answer1"
+                style="@style/GenericButton"
+                android:background="@drawable/option_a_selector"
+                android:button="@null"
+                android:onClick="answerPressed"
+                android:text="Answ1" >
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/Answer2"
+                style="@style/GenericButton"
+                android:background="@drawable/option_b_selector"
+                android:button="@null"
+                android:onClick="answerPressed"
+                android:text="Answ2" >
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/Answer3"
+                style="@style/GenericButton"
+                android:background="@drawable/option_c_selector"
+                android:button="@null"
+                android:onClick="answerPressed"
+                android:text="Answ3" >
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/Answer4"
+                style="@style/GenericButton"
+                android:background="@drawable/option_d_selector"
+                android:button="@null"
+                android:onClick="answerPressed"
+                android:text="Answ4" >
+            </RadioButton>
+        </RadioGroup>
+    </LinearLayout>
+
+</ScrollView>

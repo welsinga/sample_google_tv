@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<questions>
+	<question>
+		<title>What is the best mobile company?</title>
+		<wrong>Apple</wrong>
+		<wrong>RIM</wrong>
+		<correct>Google</correct>
+		<wrong>Microsoft</wrong>
+		<image>company</image>
+	</question>
+	<question>
+		<title>Who is this?</title>
+		<wrong>Peter Griffin</wrong>
+		<correct>Stewie Griffin</correct>
+		<wrong>Brian Griffin</wrong>
+		<wrong>Lt. Joe Swanson</wrong>
+		<image>stewie</image>
+	</question>
+
+	<question>
+		<title>What year was Google founded?</title>
+		<correct>September 1998</correct>
+		<wrong>February 1986</wrong>
+		<wrong>October 1982</wrong>
+		<wrong>Not yet</wrong>
+		<image>google</image>
+	</question>
+
+	<question>
+		<title>Name this Famous Landmark</title>
+		<wrong>The White House</wrong>
+		<wrong>Wrigley Field</wrong>
+		<correct>The Eiffel Tower</correct>
+		<wrong>A building at Google</wrong>
+		<image>eiffel</image>
+	</question>
+
+</questions>

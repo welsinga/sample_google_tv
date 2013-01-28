@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">GoogleTV Sample Questionquiz</string>
+    <string name="connecting">Waiting for player ...</string>
+    <string name="join">Join</string>
+
+</resources>

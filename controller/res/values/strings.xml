@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">GoogleTV Sample Questionquiz Controller</string>
+    <string name="hintClient">Client id (0-3 only!)</string>
+    <string name="save">Save</string>
+
+</resources>

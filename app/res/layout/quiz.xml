@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/safe_area"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg"
+        android:orientation="vertical"
+        android:padding="40dp" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/question_tv"
+                style="@style/QuestionText"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:paddingLeft="10dp" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/countdown_tv"
+                style="@style/QuestionText"
+                android:layout_width="100dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="0"
+                android:gravity="right"
+                android:paddingRight="10dp"
+                android:text="0:15" >
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0.55"
+                android:background="#ffaaaaaa"
+                android:scaleType="fitXY" >
+            </ImageView>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.48"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/option_1"
+                    style="@style/OptionButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="0.25"
+                    android:background="@drawable/option_a_selector" >
+                </Button>
+
+                <Button
+                    android:id="@+id/option_2"
+                    style="@style/OptionButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="0.25"
+                    android:background="@drawable/option_b_selector" >
+                </Button>
+
+                <Button
+                    android:id="@+id/option_3"
+                    style="@style/OptionButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="0.25"
+                    android:background="@drawable/option_c_selector" >
+                </Button>
+
+                <Button
+                    android:id="@+id/option_4"
+                    style="@style/OptionButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="0.25"
+                    android:background="@drawable/option_d_selector" >
+                </Button>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <com.elsinga.sample.googletv.app.ParticipantView
+                android:id="@+id/participant_1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25" >
+            </com.elsinga.sample.googletv.app.ParticipantView>
+
+            <com.elsinga.sample.googletv.app.ParticipantView
+                android:id="@+id/participant_2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25" >
+            </com.elsinga.sample.googletv.app.ParticipantView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/home_screen"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/home_bg"
+        android:orientation="vertical"
+        android:paddingBottom="60dp"
+        android:paddingLeft="100dp"
+        android:paddingRight="100dp"
+        android:paddingTop="60dp" >
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="0.25"
+            android:src="@drawable/headline" >
+        </ImageView>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_weight="0.9" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="0.78"
+                android:background="@drawable/window"
+                android:orientation="vertical"
+                android:padding="8dp" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.2" >
+
+                    <com.elsinga.sample.googletv.app.PlayerView
+                        android:id="@+id/player_1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent" >
+                    </com.elsinga.sample.googletv.app.PlayerView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.2" >
+
+                    <com.elsinga.sample.googletv.app.PlayerView
+                        android:id="@+id/player_2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent" >
+                    </com.elsinga.sample.googletv.app.PlayerView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.2" >
+
+                    <Button
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.68"
+                        android:onClick="playPressed"
+                        android:text="Play!" >
+
+                        <requestFocus />
+                    </Button>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
